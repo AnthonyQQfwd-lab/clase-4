@@ -14,72 +14,72 @@
             <table>
                 <tr> 
                     <td>
-                        <input type="button" name="borrar" value="CE">
+                        <input type="button" name="borrar" value="CE" onclick="borrarTodo()">
                     </td>
                     <td>
-                        <input type="button" name="quitar" value="←">
+                        <input type="button" name="quitar" value="←" onclick="borrar()">
                     </td>
                     <td>
-                        <input type="button" name="raiz" value="√">
+                        <input type="button" name="raiz" value="√" onclick="raizCuadrada()">
                     </td>
                     <td>
-                        <input type="button" name="elevar" value="X°">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="button" name="uno" value="1">
-                    </td>
-                    <td>
-                        <input type="button" name="dos" value="2">
-                    </td>
-                    <td>
-                        <input type="button" name="tres" value="3"> 
-                    </td>
-                    <td>
-                        <input type="button" name="mas" value="+">
+                        <input type="button" name="elevar" value="X°" onclick="elevar()">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="button" name="cuatro" value="4">
+                        <input type="button" name="uno" value="1" onclick="formarOperacion(1)"/>
                     </td>
                     <td>
-                        <input type="button" name="cinco" value="5">
+                        <input type="button" name="dos" value="2" onclick="formarOperacion(2)"/>
                     </td>
                     <td>
-                        <input type="button" name="seis" value="6">
+                        <input type="button" name="tres" value="3" onclick="formarOperacion(3)"/> 
                     </td>
                     <td>
-                        <input type="button" name="menos" value="-">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="button" name="siete" value="7">
-                    </td>
-                    <td>
-                        <input type="button" name="ocho" value="8">
-                    </td>
-                    <td>
-                        <input type="button" name="nueve" value="9">
-                    </td>
-                    <td>
-                        <input type="button" name="dividir" value="/">
+                        <input type="button" name="mas" value="+" onclick="formarOperacion('+')">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="button" name="punto" value=".">
+                        <input type="button" name="cuatro" value="4" onclick="formarOperacion(4)">
                     </td>
                     <td>
-                        <input type="button" name="cero" value="0">
+                        <input type="button" name="cinco" value="5" onclick="formarOperacion(5)">
                     </td>
                     <td>
-                        <input type="button" name="por" value="*">
+                        <input type="button" name="seis" value="6" onclick="formarOperacion(6)">
                     </td>
                     <td>
-                        <input type="button" name="igual" value="=">
+                        <input type="button" name="menos" value="-" onclick="formarOperacion('-')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" name="siete" value="7" onclick="formarOperacion(7)">
+                    </td>
+                    <td>
+                        <input type="button" name="ocho" value="8" onclick="formarOperacion(8)">
+                    </td>
+                    <td>
+                        <input type="button" name="nueve" value="9" onclick="formarOperacion(9)">
+                    </td>
+                    <td>
+                        <input type="button" name="dividir" value="/" onclick="formarOperacion('/')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" name="punto" value="." onclick="formarOperacion('.')">
+                    </td>
+                    <td>
+                        <input type="button" name="cero" value="0" onclick="formarOperacion(0)">
+                    </td>
+                    <td>
+                        <input type="button" name="por" value="*" onclick="formarOperacion('*')">
+                    </td>
+                    <td>
+                        <input type="button" name="igual" value="=" onclick="realizarOperacion()">
                     </td>
                 </tr>
             </table>
